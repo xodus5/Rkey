@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Public_cash">
+
+    <GridLayout
+        android:layout_width="762dp"
+        android:layout_height="234dp"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/kt"
+            android:layout_width="330dp"
+            android:layout_height="170dp"
+            android:layout_margin="30dp"
+            android:backgroundTint="#B8B8B8"
+            android:drawableBottom="@drawable/cafe_main_img"
+            android:textSize="40sp" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="762dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/card"
+            android:layout_width="330dp"
+            android:layout_height="183dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="30dp"
+            android:backgroundTint="#B8B8B8"
+            android:drawableTop="@drawable/cash_card"
+            android:padding="10dp"
+            android:text="카드결제"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+
+        <Button
+            android:id="@+id/appcard"
+            android:layout_width="330dp"
+            android:layout_height="189dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="30dp"
+            android:backgroundTint="#B8B8B8"
+            android:drawableTop="@drawable/cash_phone"
+            android:padding="15dp"
+            android:text="앱카드"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/coopon"
+            android:layout_width="330dp"
+            android:layout_height="170dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="30dp"
+            android:padding="10dp"
+            android:backgroundTint="#B8B8B8"
+            android:drawableTop="@drawable/cash_coopon"
+            android:text="쿠폰사용"
+            android:textSize="30sp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/megacard"
+            android:layout_width="330dp"
+            android:layout_height="170dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="30dp"
+            android:padding="10dp"
+            android:backgroundTint="#B8B8B8"
+            android:drawableTop="@drawable/cash_card"
+            android:text="카드결제"
+            android:textSize="30sp"
+            android:textColor="#000000" />
+
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/finger1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/finger2"/>
+
+    <TextView
+        android:id="@+id/paymentStatusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="주문금액: 0원 | 할인금액: 0원 | 결제금액: 0원"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+
+</LinearLayout>

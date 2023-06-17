@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "798857344392",
+    "project_id": "keyy-501bf",
+    "storage_bucket": "keyy-501bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798857344392:android:777b94195d95e5e3db363d",
+        "android_client_info": {
+          "package_name": "haetaekey.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "798857344392-bb1pgmiu1kuiqr06jmst4okdb9691mo4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxoPfU3N-480Fu-8kXXSKE__ziVD4K6mU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "798857344392-bb1pgmiu1kuiqr06jmst4okdb9691mo4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Rkey"
+        tools:targetApi="31">
+        <activity
+            android:name=".Public_cash"
+            android:theme="@style/Theme.AppCompat.Dialog"></activity>
+        <activity
+            android:name=".Point"
+            android:theme="@style/Theme.AppCompat.Dialog"></activity>
+
+        <activity
+            android:name=".MenuData"
+            android:exported="false" />
+        <activity
+            android:name=".MenuAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".Main_intro"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Main"
+            android:exported="false" />
+        <activity
+            android:name=".Intro_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Cafe_menudetail"
+            android:exported="false" />
+        <activity
+            android:name=".Cafe_menu"
+            android:exported="false" />
+    </application>
+
+</manifest>

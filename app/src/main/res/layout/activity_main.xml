@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="어디로 갈까요?"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:textSize="60sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="장소를 선택해주세요."
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/help"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="15dp"
+            android:textSize="35sp"
+            android:backgroundTint="#CD8A8A"
+            android:textColor="#000000"
+            android:text="도움말"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="635dp"
+        android:layout_height="662dp"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cafe_1"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="30dp"
+            android:backgroundTint="#F3DFBF"
+            android:drawableBottom="@drawable/cafe_main_img"
+            android:textColor="#000000"
+            android:text="카페"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/fast_1"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="30dp"
+            android:backgroundTint="#F3C9BF"
+            android:drawableBottom="@drawable/ham_main_img"
+            android:text="패스트푸트점"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/movie_1"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="30dp"
+            android:backgroundTint="#BFCEF3"
+            android:drawableBottom="@drawable/move_main_img"
+            android:textColor="#000000"
+            android:text="영화관"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/bank_1"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="30dp"
+            android:backgroundTint="#D0F3BF"
+            android:drawableBottom="@drawable/bank_main_img"
+            android:textColor="#000000"
+            android:text="은행"
+            android:textSize="40sp" />
+
+    </GridLayout>
+
+
+</LinearLayout>
