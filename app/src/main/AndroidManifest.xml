@@ -12,12 +12,17 @@
         android:theme="@style/Theme.Rkey"
         tools:targetApi="31">
         <activity
+            android:name=".FF_Cash"
+            android:exported="false" />
+        <activity
+            android:name=".FF_Main"
+            android:exported="false" />
+        <activity
             android:name=".Public_cash"
-            android:theme="@style/Theme.AppCompat.Dialog"></activity>
+            android:theme="@style/Theme.AppCompat.Dialog" />
         <activity
             android:name=".Point"
-            android:theme="@style/Theme.AppCompat.Dialog"></activity>
-
+            android:theme="@style/Theme.AppCompat.Dialog" />
         <activity
             android:name=".MenuData"
             android:exported="false" />
@@ -33,7 +38,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Main"
             android:exported="false" />

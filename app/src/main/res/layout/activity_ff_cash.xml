@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ff_cash"
+    tools:context=".FF_Cash">
+
+    <Button
+        android:id="@+id/ff_card"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="355dp"
+        android:alpha="0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ff_coopon"
+            android:layout_width="387dp"
+            android:layout_height="500dp"
+            android:alpha="0" />
+
+        <Button
+            android:id="@+id/ff_cash"
+            android:layout_width="420dp"
+            android:layout_height="500dp"
+            android:alpha="0" />
+    </LinearLayout>
+
+
+</LinearLayout>

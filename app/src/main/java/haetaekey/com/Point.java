@@ -17,6 +17,7 @@ public class Point extends AppCompatActivity {
 
     private ImageView fingerImageView;
     private Button no;
+    private Button yes;
 
     private boolean animationRunning = false;
 
@@ -26,6 +27,7 @@ public class Point extends AppCompatActivity {
         setContentView(R.layout.activity_point);
         fingerImageView = findViewById(R.id.finger1);
         no = findViewById(R.id.no);
+        yes = findViewById(R.id.yes);
 
 
         fingerImageView.post(new Runnable() {
@@ -66,6 +68,14 @@ public class Point extends AppCompatActivity {
         });
 
         no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Point.this, Main.class);
+                startActivity(intent);
+            }
+        });
+
+        yes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Point.this, Main.class);
