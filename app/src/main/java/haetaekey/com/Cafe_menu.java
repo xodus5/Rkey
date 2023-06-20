@@ -24,7 +24,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class Cafe_menu extends AppCompatActivity {
+public class Cafe_menu extends AppCompatActivity implements CafeRecyclerViewInterface{
     Button btnCash;
 
     private RecyclerView recyclerView;
@@ -79,8 +79,16 @@ public class Cafe_menu extends AppCompatActivity {
             }
         });
 
-        adapter = new CafeAdapter(cafeList, this);
+        adapter = new CafeAdapter(cafeList, this, this);
         recyclerView.setAdapter(adapter);
     }
 
+    @Override
+    public void onItemClick(int position) {
+        Intent intent = new Intent(Cafe_menu.this, Cafe_menudetail.class);
+        intent.putExtra("menu", cafeList.get(position).getMenu());
+        intent.putExtra("name", cafeList.get(position).getName());
+        intent.putExtra("price", cafeList.get(position).getPrice());
+        startActivity(intent);
+    }
 }

@@ -8,14 +8,20 @@ import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
 public class Cafe_menudetail extends AppCompatActivity {
+
+    ImageView cafe_menu;
+    TextView cafe_name;
+    TextView cafe_price;
 
     Button btn_put;
     ImageView fingerImageView;
@@ -85,6 +91,18 @@ public class Cafe_menudetail extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.hide();
         }
+
+        String menu = getIntent().getStringExtra("menu");
+        String name = getIntent().getStringExtra("name");
+        String price = getIntent().getStringExtra("price");
+
+        cafe_menu = findViewById(R.id.div_menu);
+        cafe_name = findViewById(R.id.dtv_name);
+        cafe_price = findViewById(R.id.dtv_price);
+
+//        cafe_menu.setImageResource(Integer.parseInt(menu));
+        cafe_name.setText(name);
+        cafe_price.setText(price);
 
     }
 }
