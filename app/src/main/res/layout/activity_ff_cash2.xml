@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".FF_Cash2"
+    android:background="@drawable/ff_cash2">
+
+    <Button
+        android:id="@+id/ff_pack"
+        android:layout_width="175dp"
+        android:layout_height="223dp"
+        android:layout_marginLeft="390dp"
+        android:layout_marginTop="210dp"
+        android:alpha="0" />
+
+    <Button
+        android:id="@+id/ff_mark"
+        android:layout_width="175dp"
+        android:layout_height="223dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginRight="30dp"
+        android:alpha="0" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="114dp"
+            android:layout_height="265dp"
+            android:layout_marginLeft="-130dp"
+            android:layout_marginTop="500dp"
+            android:text="Button"
+            android:alpha="0" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="114dp"
+            android:layout_height="265dp"
+            android:layout_marginLeft="-240dp"
+            android:layout_marginTop="500dp"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="114dp"
+            android:layout_height="265dp"
+            android:layout_marginLeft="-240dp"
+            android:layout_marginTop="500dp"
+            android:text="Button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="114dp"
+            android:layout_height="265dp"
+            android:layout_marginLeft="-130dp"
+            android:layout_marginTop="850dp"
+            android:text="Button"
+            android:alpha="0" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="114dp"
+            android:layout_height="265dp"
+            android:layout_marginLeft="-240dp"
+            android:layout_marginTop="850dp"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="114dp"
+            android:layout_height="265dp"
+            android:layout_marginLeft="-240dp"
+            android:layout_marginTop="850dp"
+            android:text="Button" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="239dp"
+        android:layout_height="92dp"
+        android:layout_marginLeft="-240dp"
+        android:layout_marginTop="1130dp"
+        android:alpha="0"/>
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="239dp"
+        android:layout_height="92dp"
+        android:layout_marginLeft="-500dp"
+        android:layout_marginTop="1130dp"
+        android:alpha="0"/>
+
+</LinearLayout>

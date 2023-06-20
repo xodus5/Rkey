@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Rkey"
         tools:targetApi="31">
         <activity
+            android:name=".FF_Cash2"
+            android:exported="false" />
+        <activity
             android:name=".FF_Cash"
             android:exported="false" />
         <activity
