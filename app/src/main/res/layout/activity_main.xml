@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
     android:background="@drawable/main_key"
     tools:context=".Main">
 
@@ -20,9 +21,24 @@
         android:id="@+id/fast_1"
         android:layout_width="242dp"
         android:layout_height="334dp"
-        android:layout_marginLeft="45dp"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="400dp"
         android:alpha="0" />
 
+        <Button
+            android:id="@+id/movie_1"
+            android:layout_width="242dp"
+            android:layout_height="334dp"
+            android:layout_marginTop="760dp"
+            android:layout_marginLeft="-530dp"
+            android:alpha="0" />
+
+        <Button
+            android:id="@+id/bank_1"
+            android:layout_width="242dp"
+            android:layout_height="334dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="760dp"
+            android:alpha="0" />
 
 </LinearLayout>

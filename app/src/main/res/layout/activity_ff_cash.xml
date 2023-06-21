@@ -33,5 +33,11 @@
             android:alpha="0" />
     </LinearLayout>
 
+    <ImageView
+        android:id="@+id/finger1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/finger2"/>
+
 
 </LinearLayout>
