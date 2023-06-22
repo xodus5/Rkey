@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Cafe_menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:textSize="20sp"
+            android:text="오늘의 할인"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:textSize="20sp"
+            android:text="추천메뉴"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:textSize="20sp"
+            android:text="세트 메뉴"
+            android:layout_marginLeft="20dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:textSize="20sp"
+            android:text="커피"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:textSize="15sp"
+            android:text="스무디 &amp; 프라페"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:textSize="20sp"
+            android:text="디저트"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/lv_ff"
+            android:layout_width="574dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_cash"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="25dp"
+            android:text="결제하기"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>
